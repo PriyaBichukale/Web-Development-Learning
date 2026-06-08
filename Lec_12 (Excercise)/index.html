@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- You are given 12 files; 6 audio 6 video
+        Design a website using HTML only which shows these 12 files. 
+        1.mp3, 2.mp3 ... 6.mp3
+        1.mp4, 2.mp4 ... 6.mp4-->
+        <header>
+            <h1 id="header">Header</h1>
+            <nav>
+                <a href="#video">Video</a>|<a href="#audio">Audio</a>|<a href="#header">Header</a>|<a href="#footer">Footer</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Listen different types of Audios & Videos</h1>
+            <h2 id="video">Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=Zo5T3BT6kebjUKko&amp;start=440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ntLJmHOJ0ME?si=4CqMr9RyLunuT5eX&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=Q78KcmDgOSD8K9cO&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7wnove7K-ZQ?si=ZLaxMF-iVZ1HRMas&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CF52N-w4anI?si=ttAivmOZIo3Aj_Qh&amp;start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-mJFZp84TIY?si=k8J6C1oF-b89EsVo&amp;start=71" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2 id="audio">Audios</h2>
+            <audio src="./audio1.mp3" controls autoplay loop muted preload="metadata"></audio>
+            <audio src="./audio2.mp3" controls autoplay loop muted preload="metadata"></audio>
+            <audio src="./audio3.mp3" controls autoplay loop muted preload="metadata"></audio>
+            <audio src="./audio4.mp3" controls autoplay loop muted preload="metadata"></audio>
+            <audio src="./audio5.mp3" controls autoplay loop muted preload="metadata"></audio>
+            <audio src="./audio6.mp3" controls autoplay loop muted preload="metadata"></audio>
+        </main>
+        <footer>
+            <h2 id="footer">Footer</h2>
+            &copy; 2026 | reserved audios & videos
+        </footer>
+</body>
+</html>

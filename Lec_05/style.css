@@ -1,3 +1,14 @@
+body{
+    background-color: thistle;
+    color: brown;
+    font-weight: bold;
+}
+
+td,th{
+    border: 2px solid black;
+}
 td{
-    border: 1px;
+    padding: 7px;
+    text-align: center;
+    color: brown;
 }

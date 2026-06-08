@@ -1,35 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="./trainimage.jpg" alt="Train Image" width="300" height="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image | Table | List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image | Table | List</h1>
 
+    <h2>Image</h2>
+    <img src="./trainimage.jpg" alt="Train Image" width="300" height="auto" />
+
+    <h2>Table</h2>
     <table>
+      <caption>
+        Employee Details
+      </caption>
+      <thead>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Language</th>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Sham</td>
+          <td rowspan="2">Programmer</td>
+          <td>C++</td>
         </tr>
         <tr>
-            <td>Sham</td>
-            <td>Programmer</td>
-            <td>Java</td>
+          <td>JavaScript</td>
         </tr>
         <tr>
-            <td>Shami</td>
-            <td>Programmer</td>
-            <td>JavaScript</td>
+          <td colspan="2">Java Developer</td>
         </tr>
+      </tbody>
+      <tfoot>
         <tr>
-            <td>Shubham</td>
-            <td>Programmer</td>
-            <td>Java</td>
+          <td colspan="3">&copy; 2026</td>
         </tr>
+      </tfoot>
     </table>
-</body>
+
+    <h2>List</h2>
+    <ul>
+        <!-- by defialt type="disc" -->
+        <li>First Year</li>
+        <li>Second Year</li>
+        <li>Third Year</li>
+        <li>Four Year</li>
+    </ul>
+    <ul type="circle">
+        <li>First Year</li>
+        <li>Second Year</li>
+        <li>Third Year</li>
+        <li>Four Year</li>
+    </ul>
+    <ul type="square">
+        <li>First Year</li>
+        <li>Second Year</li>
+        <li>Third Year</li>
+        <li>Four Year</li>
+    </ul>
+    <ol>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ol>
+    <ol type="A">
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ol>
+    <ol type="I" start="10">
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language: The standard for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+
+        <dt>JS</dt>
+        <dd>JavaScript : A programming language commonly used in web development to add interactive features.</dd>
+    </dl>
+  </body>
 </html>
