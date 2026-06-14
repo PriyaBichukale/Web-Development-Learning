@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        /*html{
+            font-size: 20px;
+        }*/
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 1536px;*/
+            width: 80vw; /*view port width*/
+            height: 10vh;
+            margin: auto;
+            background-color:aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 1536px;*/
+            width: 80vw; /*view port width*/
+            /*height: 80vh;*/
+            min-height: 80vh;
+            font-size: 18px;
+            margin:23px auto;
+            background-color:aquamarine;
+        }
+        .container p{
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid black;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(5, 5, 5);
+            font-size: 22px;
+            /*width: 100vmin;*/
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <!-- vmin for laptop:height | vmax for mobile:width -->
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis autem illo, quam sequi minus reprehenderit at odit numquam dolorem, ut eligendi vel vero. Eaque soluta incidunt dignissimos cumque veniam. Necessitatibus iusto architecto modi deserunt odio aperiam animi natus nulla tempora asperiores mollitia adipisci nisi fuga earum repudiandae aut, amet facilis
+        </p>
+        excepturi maiores corrupti placeat sunt atque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni veritatis ex asperiores esse in consectetur hic quis, sed enim, ad aliquid? Aperiam natus cum cupiditate incidunt maiores beatae accusamus.
+            Corporis, veritatis? Iusto repellat commodi porro, temporibus perferendis tenetur animi odio dolorum molestiae dignissimos ullam inventore non consectetur minima rem harum, maiores ipsa voluptate officia quia. Sequi, alias. Unde, odit?
+            Doloremque ullam ipsum aut dolore perferendis nam autem cumque illum aliquam quas, eveniet nesciunt quod tempora iure iusto laudantium voluptas sint provident possimus aliquid aspernatur repellendus blanditiis? Omnis, quibusdam tempora.
+            Exercitationem similique placeat aspernatur repellat omnis amet, ab voluptate distinctio quae quibusdam rerum reprehenderit laboriosam repellendus labore ex cupiditate quo quod est? Nostrum nesciunt sit distinctio saepe. Nulla, nihil sequi!
+            Ullam alias explicabo excepturi. Maxime vel delectus quidem optio sequi blanditiis beatae. Itaque corporis animi asperiores voluptate aut atque nihil commodi possimus, molestias quas fugiat obcaecati unde distinctio, iure sit.
+            Facere illo assumenda ratione velit totam culpa nisi quisquam delectus vitae! Eveniet illo at labore, cum quisquam, animi omnis eos quo explicabo error amet. Sit neque earum cumque aut deleniti.
+            
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>

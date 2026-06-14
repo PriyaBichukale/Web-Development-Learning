@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /*Element Selector*/
+        div{
+            color: red;
+        }
+
+        /*Class Selector*/
+        .red{
+            /*color: red;*/
+        }
+
+        /*ID Selector*/
+        #green{
+            color: green;
+        }
+
+        /*Child Selector (indide div first p should be then only can apply)*/
+        div > p {
+            color: blue;
+            background-color: lightgray;
+        }
+
+        /*Descendant Selector (p should be inside div at which no no matter)*/
+        div p{
+            color: darkgreen;
+            background-color: black;
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo Selector*/
+        a:visited{
+            /* After visiting the link */
+            color: red;
+        }
+
+        a:link{
+            /* Not visited link */
+            color: darkgoldenrod;
+        }
+
+        a:active{
+            /* When click on the anchor */
+            background-color: aqua;
+        }
+
+        a:hover{
+            /* While just moving the curson on anchor tag */
+            color: lightgreen;
+        }
+        p:first-child{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>To learn more about CSS Selector Visit this <a href="https://web.dev/learn/css/pseudo-classes">Link</a></h2>
+    <main>
+        <p>I am first child of parent</p>
+        <p>I am second child of parent</p>
+    </main>
+    <div>
+        <article class="red">
+            I am a div
+            <p>Hey I am para inside the div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am an another div
+        <p>Hey I am para inside the div</p>
+    </div>
+    <a href="https://www.google.com">Go to Google</a> | 
+    <a href="https://www.meesho.com">Go to Meesho</a>
+</body>
+</html>
